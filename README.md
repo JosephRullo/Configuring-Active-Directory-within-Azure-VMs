@@ -33,7 +33,7 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <h2>Deployment and Configuration Steps</h2>
 <p>
 <p>
-<h2>Step 1.</h2> **Azure VM** To begin sign in to Microsoft Azure by visiting (www.portal.azure.com) From here choose the "Virtual Machines" tab at the top. Now click "Create" -> select "Azure Virtual Machine".
+<h2>Step 1.</h2> Azure VM. To begin sign in to Microsoft Azure by visiting (www.portal.azure.com) From here choose the "Virtual Machines" tab at the top. Now click "Create" -> select "Azure Virtual Machine".
 <p>
 <p>
 <img src="https://imgur.com/BRZFE2w.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -51,10 +51,10 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 </p>
 <br />
 
-<h2>Step 3.</h2> Set Domain Controller’s NIC Private IP address to be static.
+<h2>Step 3.</h2> Set Domain Controller’s NIC Private IP address to be static. First go back to the homepage and select the "Virtual Machine" tab again and click on the domain controller VM that was just created. This will bring you to the VM Overview page where all of it's settings can be viewed and changed if neccessary. **Take note of the Resource Group and Virtual Network (Vnet) that were created for the VM (we will need this for the Client VM we will create next). On the left hand side under "Settings" click on "Networking"
 <p>
 <p>
-<img src="https://imgur.com/QuZUmma.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/QuZUmma.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/s2u02zs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/BxU9mmr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/9cHazhQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/L5K3cwW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
