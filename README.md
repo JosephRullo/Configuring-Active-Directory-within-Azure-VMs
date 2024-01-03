@@ -33,7 +33,7 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <h2>Deployment and Configuration Steps</h2>
 <p>
 <p>
-<h2>Step 1.</h2> To begin sign in to Microsoft Azure by visiting (www.portal.azure.com) From here choose the "Virtual Machines" tab at the top. Now click "Create" -> select "Azure Virtual Machine".
+<h2>Step 1.</h2> **Azure VM** To begin sign in to Microsoft Azure by visiting (www.portal.azure.com) From here choose the "Virtual Machines" tab at the top. Now click "Create" -> select "Azure Virtual Machine".
 <p>
 <p>
 <img src="https://imgur.com/BRZFE2w.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
