@@ -95,3 +95,12 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <p>
 </p>
 <br />
+
+<h2>Step 5.</h2> Log back into the Domain Controller VM. To log back in we will now use the Domain Name we just created with the Active Directory install. Enter in the username with the domain's name you assigned followed by a backslash, for this example it will be mydomain.com\labuser -> now enter the password and login. 
+<p>
+<p> 
+<img src="https://imgur.com/5ZcDV4A.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
