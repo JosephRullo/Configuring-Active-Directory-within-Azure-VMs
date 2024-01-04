@@ -127,7 +127,15 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 
 <p>
 <p> 
-<img src="https://imgur.com/5ZcDV4A.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/RqP8k8y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/BGPvbeS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/e4mdVLc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/DttcJJG.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/GTRZPaP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/EEVAJld.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/BmTLJvm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/3x10UXA.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/xTwYeHN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
