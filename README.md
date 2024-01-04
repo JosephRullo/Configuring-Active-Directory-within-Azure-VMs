@@ -69,7 +69,7 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 </p>
 <br />
 
-<h2>Step 5.</h2> Ensure Connectivity between the client and Domain Controller. Go to the start menu and type "Remote Desktop" and the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the VM overview screen -> enter it in and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if a authentication warning appears. After logging in, go to the start menu withing the Client VM and type "CMD" to bring up "Command Prompt" select it to open. To test the connection with the Domain Controller VM that is on the same Virtual Network, we will send a ping via the command prompt. First take note of the "Private IP Address" for the Domain Controller on the VM overview page under the Networking section, this is the address we will ping (in this case 10.0.0.4). Type in the Command Prompt "ping -t 10.0.0.4" to send a perpetual ping (connection test) to our Domain Controller VM. Notice that the request is timed out. We will fix this in the next step.
+<h2>Step 5.</h2> Ensure Connectivity between the client and Domain Controller. Go to the start menu and type "Remote Desktop" and the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the VM overview screen -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if a authentication warning appears. After logging in, go to the start menu withing the Client VM and type "CMD" to bring up "Command Prompt" select it to open. To test the connection with the Domain Controller VM that is on the same Virtual Network, we will send a ping via the command prompt. First take note of the "Private IP Address" for the Domain Controller on the VM overview page under the Networking section, this is the address we will ping (in this case 10.0.0.4). Type in the Command Prompt "ping -t 10.0.0.4" to send a perpetual ping (connection test) to our Domain Controller VM. Notice that the request is timed out. We will fix this in the next step.
 <p>
 <p> 
 <img src="https://imgur.com/qNdcnwN.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/MQXg0RI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
@@ -96,10 +96,19 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 </p>
 <br />
 
-<h2>Step 5.</h2> Log back into the Domain Controller VM. To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the password and login. 
+<h2>Step 8.</h2> Log back into the Domain Controller VM. To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the password and login. 
 <p>
 <p> 
 <img src="https://imgur.com/5ZcDV4A.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 9.</h2> Create an Admin and Normal User Account in Active Directory. Now that we are logged back into the Domain Controller VM under the new domain name we created, we will start to create groups that we can add users to. From the Sever Manager Dasboard in the upper right corner click on "Tools" -> select "Active Directory Users and Computers" (you can also go to the start menu and search for this as well). Once opened, Under the heading on the left of the window titled "Active Directory User and Computers" select the name of the domain that was created in the previous step(in this case mydomain.com). You will notice 6 folders that already exist here, we will add 2 more in this tutorial. Right click on the domain -> select New -> choose "Organizational Unit" -> name it "ADMINS" for this example. Repeat this and create another Organizational Unit called EMPLOYEES. 
+<p>
+<p> 
+<img src="https://imgur.com/6JIbYfA.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/2AB3h38.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/fWsv9Z2.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
