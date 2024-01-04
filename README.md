@@ -99,7 +99,7 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <h2>Step 8.</h2> Log back into the Domain Controller VM. To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the password and login. 
 <p>
 <p> 
-<img src="https://imgur.com/5ZcDV4A.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/5ZcDV4A.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
@@ -117,14 +117,16 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <h2>Step 10.</h2> Create a new User and Administrator. Begin by opening the ADMINS organizational unit that was created in the previous step and right click -> select New -> select User. Fill in the First and Last name and assign a User Login Name -> click next -> assign a Password (uncheck "user must change password at next logon" for this example, usually this is left on) -> click Next -> click Finish (write down username and password in case you forget). Now we will make this User the Admin. To do this go to ADMINS -> right click on the User that was just created -> select Properties -> click the "Members of" tab -> click "Add" -> type "domain" in the "Enter the object names" field -> click "Check Names" -> select "Domain Admins" -> click Ok -> click Apply -> click Ok. Now we can logoff and sign back in as this new administator. Go to command prompt -> type logoff. Go back to remote desktop connection and login to the Domain Controller again this time using the domain name \  followed by the username and password we just assigned the admin, in this example it's mydomain.com\joe_admin. We will use this admin account for the Domain Controller moving forward.
 <p>
 <p> 
-<img src="https://imgur.com/3967bDO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/6Veye3B.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/CsKpwNk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <img src="https://imgur.com/ZUD9JDh.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/3967bDO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/6Veye3B.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/CsKpwNk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZUD9JDh.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
 <br />
 
 <h2>Step 11.</h2> Join the Client to your Domain. In order for the Client VM to regonize the Domain we set up, we have to set the Domain Controller's DNS server as the Client's DNS server for it to work. Go to the Azure Portal -> go to the  Client VM's overview page -> click on Networking (on the right of the screen) -> click on the Network Interface (highlighted and bolded in blue) -> click "Choose DNS server" -> select "Custom" and type in the DNS server field the Private IP Address of the Domain Controller VM (can be found on the Domain Controller's VM overview page) -> click "Save". Once saving is complete, go back to the Azure Virtual Macnine page -> select the Client VM -> click Restart at the top of the screen -> click Yes. Wait a few minutes for the Client to restart, then log back into it (using the original username and password set for the Client VM) via Remote Desktop. Once logged back in to the Client -> right click on the Start menu -> select System -> click on "Rename this PC (advanced)" -> in the new window click "Change" next to change domain workgroup -> Click "Domain" under Member of -> enter the name of the Domain created in Active Directory in the field -> click Ok -> Enter in the Username and Password for assigned to the administrator of the Domain (ex mydomain\joe_admin) -> click Ok. The computer will prompt you to Restart (note prompt windows may be behind the window you are currently on). Click to restart. Now log on to the Client VM as the admin we created for the Domain Controller (we can do this now that we have joined the Client to the Domain). Lastly we will go back to the Domain Controller VM(Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
-
 <p>
 <p> 
 <img src="https://imgur.com/RqP8k8y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -136,6 +138,16 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 <img src="https://imgur.com/BmTLJvm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/3x10UXA.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/xTwYeHN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 12.</h2> Setup Remote Desktop for non-administrative users on Client VM. First logon to the Client VM as the domain Admin. From the home screen, right click on the start menu -> select system -> select Remote Desktop (over to the right) -> under user accounts click "Select users that can remotely access this PC" -> Click Add -> type "domain users" in the "Enter the object names" field -> click Check Names -> select Domain Users -> click Ok -> click Ok again.
+<p>
+<p> 
+<img src="https://imgur.com/T6fGN4d.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://imgur.com/xiFwEXO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
