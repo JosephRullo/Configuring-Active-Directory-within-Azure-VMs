@@ -228,7 +228,7 @@ First logon to the Client VM as the domain Admin. From the home screen, right cl
 
 **Create Users to Test Functionality.** 
 <p>
-Finally let's create some new users in Active Directory so that we can use to test logging on the Client with them, ensuring everything is working properly. Log into the Domain Controller VM as the Admin -> open Active Directory Users and Computers -> select EMPLOYEES -> right click select New -> select User. You can create any number of users you like and assign any name/user logon/password to them, as this is only a test. Once this is complete, attempt to log into the Client VM using the Username and Password from one of the users you just created (in this example mydomain.com\alice.a). Congratulations!!! Active Directory is now setup and functioning properly.
+Finally let's create some new users in Active Directory so that we can use to test logging on the Client with them, ensuring everything is working properly. Log into the Domain Controller VM as the Admin -> open Active Directory Users and Computers -> select EMPLOYEES -> right click select New -> select User. You can create any number of users you like and assign any name/user logon/password to them, as this is only a test. Once this is complete, attempt to log into the Client VM using the Username and Password from one of the users you just created (in this example mydomain.com\alice.a). 
 <p>
 <p> 
 <img src="https://imgur.com/MzIxUtk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
@@ -241,3 +241,6 @@ Finally let's create some new users in Active Directory so that we can use to te
 <p>
 </p>
 <br />
+<h2>Congratulations!!!</h2>
+
+**Active Directory is now setup and functioning properly.**
