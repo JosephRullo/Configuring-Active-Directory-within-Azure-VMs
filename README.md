@@ -243,4 +243,4 @@ Finally let's create some new users in Active Directory so that we can use to te
 <br />
 <h2>Congratulations!!!</h2>
 
-**Active Directory is now setup and functioning properly.**
+Active Directory is now setup and functioning properly.
