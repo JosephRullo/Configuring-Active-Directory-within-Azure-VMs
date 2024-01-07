@@ -284,7 +284,7 @@ Log back into the Client VM (using the original username and password set for it
 <h2>Step 18.</h2>
 
 **Verify Client is Present in Active Directory.** 
-<p> Switch back to the Domain Controller VM(Remote Desktop) and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client present in this group.
+<p> Switch back to the Domain Controller VM(Remote Desktop) and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client VM present in this group.
 <p>
 <p>  
 <img src="https://imgur.com/xTwYeHN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -297,7 +297,7 @@ Log back into the Client VM (using the original username and password set for it
 
 **Setup Remote Desktop for Non-Administrative Users on Client VM.** 
 <p>
-First logon to the Client VM as the domain Admin. From the home screen, right click on the start menu -> select system -> select Remote Desktop (over to the right) -> under user accounts click "Select users that can remotely access this PC" -> Click Add -> type "domain users" in the "Enter the object names" field -> click Check Names -> select Domain Users -> click Ok -> click Ok again.
+Logon to the Client VM as the Domain Admin. From the home screen, right click on the start menu -> select system -> select Remote Desktop (over to the right) -> under User Accounts click "Select users that can remotely access this PC" -> Click Add -> type "domain users" in the "Enter the object names" field -> click Check Names -> select Domain Users -> click Ok -> click Ok again.
 <p>
 <p> 
 <img src="https://imgur.com/T6fGN4d.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
@@ -307,7 +307,7 @@ First logon to the Client VM as the domain Admin. From the home screen, right cl
 </p>
 <br />
 
-<h2>Step 13.</h2>
+<h2>Step 20.</h2>
 
 **Create Users to Test Functionality.** 
 <p>
