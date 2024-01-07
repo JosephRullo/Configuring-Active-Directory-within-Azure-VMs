@@ -254,24 +254,46 @@ Now we will make this User the Admin. To do this go to ADMINS -> right click on 
 
 **Join the Client to your Domain.** 
 <p>
-In order for the Client VM to regonize the Domain we set up, we have to set the Domain Controller's DNS server as the Client's DNS server for it to work. Go to the Azure Portal -> go to the  Client VM's overview page -> click on Networking (on the right of the screen) -> click on the Network Interface (highlighted and bolded in blue) -> click "Choose DNS server" -> select "Custom" and type in the DNS server field the Private IP Address of the Domain Controller VM (can be found on the Domain Controller's VM overview page) -> click "Save". Once saving is complete, go back to the Azure Virtual Macnine page -> select the Client VM -> click Restart at the top of the screen -> click Yes. Wait a few minutes for the Client to restart, then log back into it (using the original username and password set for the Client VM) via Remote Desktop. Once logged back in to the Client -> right click on the Start menu -> select System -> click on "Rename this PC (advanced)" -> in the new window click "Change" next to change domain workgroup -> Click "Domain" under Member of -> enter the name of the Domain created in Active Directory in the field -> click Ok -> Enter in the Username and Password for assigned to the administrator of the Domain (ex mydomain\joe_admin) -> click Ok. The computer will prompt you to Restart (note prompt windows may be behind the window you are currently on). Click to restart. Now log on to the Client VM as the admin we created for the Domain Controller (we can do this now that we have joined the Client to the Domain). Lastly we will go back to the Domain Controller VM(Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
+In order for the Client VM to regonize the Domain we set up, we have to set the Domain Controller's DNS server as the Client's DNS server for it to work. Go to the Azure Portal -> go to the  Client VM's overview page -> click on Networking (on the left of the screen) -> click on the Network Interface: (highlighted and bolded in blue, towards the top middle of the screen) -> click "Choose DNS server" -> select "Custom" and type in the DNS server field the Private IP Address of the Domain Controller VM (found on the Domain Controller's VM overview page) -> click "Save". Once saving is complete, go back to the Azure Virtual Macnine page -> select the Client VM -> click Restart at the top of the screen -> click Yes. Wait a few minutes for the Client to restart.
 <p>
 <p> 
 <img src="https://imgur.com/RqP8k8y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/BGPvbeS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/e4mdVLc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/DttcJJG.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<p>
+</p>
+<br />
+
+<h2>Step 17.</h2> 
+
+**Join the Client to your Domain(continued).** 
+<p>
+Log back into the Client VM (using the original username and password set for it) via Remote Desktop. Once logged back in -> right click on the Start menu -> select System -> click on "Rename this PC (advanced)" -> in the new window click "Change" next to change domain workgroup -> Click "Domain" under Member of -> enter the name of the Domain "created in Active Directory" in the field -> click Ok -> Enter in the Username and Password assigned to the administrator of the Domain (ex mydomain\joe_admin) -> click Ok. The computer will prompt you to Restart (note prompt windows may be behind the window you are currently on). Click to restart. Now log on to the Client VM as the admin we created for the Domain Controller (we can do this now that we have joined the Client to the Domain). Lastly we will go back to the Domain Controller VM(Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
+<p>
+<p>  
 <img src="https://imgur.com/GTRZPaP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/EEVAJld.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/BmTLJvm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/3x10UXA.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 18.</h2>
+
+**Verify Client is Present in Active Directory.** 
+<p> Switch back to the Domain Controller VM(Remote Desktop) and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client present in this group.
+<p>
+<p>  
 <img src="https://imgur.com/xTwYeHN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
 <br />
 
-<h2>Step 12.</h2> 
+<h2>Step 19.</h2> 
 
 **Setup Remote Desktop for Non-Administrative Users on Client VM.** 
 <p>
