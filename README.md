@@ -64,7 +64,7 @@ The computer where Active Directory will be installed is known as the Domain Con
 
 <h2>Step 3.</h2> 
 
-**Set Domain Controller’s NIC Private IP Address to be Static.**
+**Set Domain Controller’s NIC Private IP Address to Static.**
 <p>
 First go back to the homepage and select the "Virtual Machine" tab again and click on the domain controller VM that was just created. This will bring you to the VM Overview page where all of it's settings can be viewed and changed if neccessary. **Take note of the Resource Group and Virtual Network (Vnet) that were created for the VM (we will need this for the Client VM we will create next). On the left hand side under "Settings" click on "Networking". From the Networking page, next to the bold words "Network Interface:" you will see the virtual machine's network interface card highlighted and bolded in blue (in our example it is called "domaincontroller-vm204_z1"). Click on it and you will be brought to the "Network Interface Card" (NIC) settings page. Select "Configure your IP's"  button at the bottom of the screen. Now click on the name "ipconfig1", a new pop up will appear on the right of the screen. From there change the "Private IP Address Settings" from Dynamic -> to Static -> then click save. 
 <p>
@@ -114,7 +114,6 @@ This step is optional, but will be very helpful for keeping track of all the Use
 <p>
 <p>
 <img src="https://i.imgur.com/DneaCuI.png" height="20%" width="20%" alt="Disk Sanitization Steps"/> 
-
 </p>
 <p>
 </p>
@@ -150,7 +149,7 @@ After logging in, a new window will appear. This new window is your Client Virtu
 
 **Ensure Connectivity between the client and Domain Controller (continued).** 
 <p>
-Now we will login to our Domain Controller via Remote Desktop. Use the Public IP Address for the Domain Controller (found on VM overview screen) to enter in Remote Desktop and use the username and password for it (This may become a little confusing with two VM's open so it's best to have all the username's and password's written down and keep the window's seperated). Wait for Windows Server to finish loading -> go to the strart menu -> type in wf.msc to bring up the Windows Defender Firewall program and open it. In Windows Firewall -> select "Inbound Rules" -> locate the rule named "Virtual Machine Monitoring (Echo Request-ICMPv4-in) -> right click and "Enable Rule". Once this is complete, go back to the Client VM and notice now that you are receiving a reply from 10.0.0.4 (the Domain Controller). Great! Now we know there is a definite connection between the two computers.
+Now we will login to our Domain Controller via Remote Desktop. Use the Public IP Address for the Domain Controller (found on VM overview screen) to enter in Remote Desktop and use the username and password assigned to it. Wait for Windows Server to finish loading -> go to the strart menu -> type in wf.msc to bring up the Windows Defender Firewall program and open it. In Windows Firewall -> select "Inbound Rules" -> locate the rule named "Virtual Machine Monitoring (Echo Request-ICMPv4-in) -> right click and "Enable Rule". Once this is complete, go back to the Client VM window and notice now that you are receiving a reply from 10.0.0.4 (the Domain Controller). You can stop the ping by hitting ctrl and c on the keyboard. Great! Now we know there is a definite connection between the two computers.
 <p>
 <p> 
 <img src="https://imgur.com/PjfKPz8.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
