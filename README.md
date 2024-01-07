@@ -123,7 +123,7 @@ This step is optional, but will be very helpful for keeping track of all the Use
 
 **Login to the Client Virtual Machine with Remote Desktop.** 
 <p>
-Go to the start menu and type "Remote Desktop" and open the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the Client VM overview page (upper right corner) -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if a authentication warning appears.
+Go to the start menu and type "Remote Desktop" and open the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the Client VM overview page (upper right corner) -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if an authentication warning appears.
 <p>
 <p> 
 <img src="https://imgur.com/qNdcnwN.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -145,7 +145,7 @@ After logging in, a new window will appear. This new window is your Client Virtu
 </p>
 <br />
 
-<h2>Step 8.</h2> 
+<h2>Step 9.</h2> 
 
 **Ensure Connectivity between the client and Domain Controller (continued).** 
 <p>
@@ -160,17 +160,29 @@ Now we will login to our Domain Controller via Remote Desktop. Use the Public IP
 </p>
 <br />
 
-<h2>Step 9.</h2>
+<h2>Step 10.</h2>
 
 **Install Active Directory.** 
 <p>
-With connectivity established, we can now begin to install Active Directory on the Domain Controller VM. On the Sever Manager Dasboard -> select 2. Add roles and features -> click "Next" in the wizard until you get to "Sever Roles" -> check the box next to "Active Directory Domain Services" -> click "Add Features" -> click "Next" until you get to confirmation -> click "Install" and wait. When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear under "Post-Deployment configuration" click on "Promote this server to a domain controller". A new window will open under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, but we will reconnect in the next step.
+With connectivity established, we can now begin to install Active Directory on the Domain Controller VM. On the Sever Manager Dasboard -> select 2. Add roles and features -> click "Next" in the wizard until you get to "Sever Roles" -> check the box next to "Active Directory Domain Services" -> click next-> click "Add Features" -> click "Next" until you get to confirmation -> click "Install" and wait.
 <p>
 <p> 
 <img src="https://imgur.com/Ee3ZbNU.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/bHrgjSx.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/WTWE1RG.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/mTH0zU6.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 10.</h2>
+
+**Install Active Directory (continued).** 
+<p>
+When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear -> under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
+<p>
+<p> 
 <img src="https://imgur.com/WVaHLOb.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/SRO8aPJ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/jIMTV0V.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
