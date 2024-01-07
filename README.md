@@ -176,7 +176,7 @@ With connectivity established, we can now begin to install Active Directory on t
 </p>
 <br />
 
-<h2>Step 10.</h2>
+<h2>Step 11.</h2>
 
 **Install Active Directory (continued).** 
 <p>
@@ -194,7 +194,7 @@ When the install is complete, you will see a yellow triangle appear in the top r
 </p>
 <br />
 
-<h2>Step 8.</h2> 
+<h2>Step 12.</h2> 
 
 **Log back into the Domain Controller VM.** 
 <p>
@@ -207,7 +207,7 @@ To log back in we will now use the Domain Name we just created with the Active D
 </p>
 <br />
 
-<h2>Step 9.</h2> 
+<h2>Step 13.</h2> 
 
 **Create an Admin and Normal User Account in Active Directory.**
 <p>
@@ -222,15 +222,27 @@ Now that we are logged back into the Domain Controller VM under the new domain n
 </p>
 <br />
 
-<h2>Step 10.</h2>
+<h2>Step 14.</h2>
 
-**Create a new User and Administrator.**
+**Create a new User/Administrator.**
 <p>
-Begin by opening the ADMINS organizational unit that was created in the previous step and right click -> select New -> select User. Fill in the First and Last name and assign a User Login Name -> click next -> assign a Password (uncheck "user must change password at next logon" for this example, usually this is left on) -> click Next -> click Finish (write down username and password in case you forget). Now we will make this User the Admin. To do this go to ADMINS -> right click on the User that was just created -> select Properties -> click the "Members of" tab -> click "Add" -> type "domain" in the "Enter the object names" field -> click "Check Names" -> select "Domain Admins" -> click Ok -> click Apply -> click Ok. Now we can logoff and sign back in as this new administator. Go to command prompt -> type logoff. Go back to remote desktop connection and login to the Domain Controller again this time using the domain name \  followed by the username and password we just assigned the admin, in this example it's mydomain.com\joe_admin. We will use this admin account for the Domain Controller moving forward.
+Begin by opening the ADMINS organizational unit that was created in the previous step and right click -> select New -> select User. Fill in the First and Last name and assign a User Login Name -> click next -> assign a Password (uncheck "user must change password at next logon" for this example, usually this is left on) -> click Next -> click Finish (write down username and password in case you forget).
 <p>
 <p> 
 <img src="https://imgur.com/3967bDO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/6Veye3B.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 15.</h2>
+
+**Create a new User/Administrator (continued).**
+<p>
+Now we will make this User the Admin. To do this go to ADMINS -> right click on the User that was just created -> select Properties -> click the "Members of" tab -> click "Add" -> type "domain" in the "Enter the object names" field -> click "Check Names" -> select "Domain Admins" -> click Ok -> click Apply -> click Ok. Now we can logoff and sign back in as this new administator. Go to command prompt -> type logoff. Go back to remote desktop connection and login to the Domain Controller again this time using the domain name \  followed by the username and password we just assigned the admin, in this example it's mydomain.com\joe_admin. We will use this admin account for the Domain Controller moving forward.
+<p>
+<p> 
 <img src="https://imgur.com/CsKpwNk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/ZUD9JDh.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
@@ -238,7 +250,7 @@ Begin by opening the ADMINS organizational unit that was created in the previous
 </p>
 <br />
 
-<h2>Step 11.</h2> 
+<h2>Step 16.</h2> 
 
 **Join the Client to your Domain.** 
 <p>
