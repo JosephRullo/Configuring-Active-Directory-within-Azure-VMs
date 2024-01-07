@@ -83,10 +83,22 @@ First go back to the homepage and select the "Virtual Machine" tab again and cli
 
 **Create the Client VM (Windows 10).** 
 <p>
-Now it's time to set up the second virtual machine that will become the Client with which will connect to the Domain Controller via the network that was previously established. Go to the Azure home screen and select the Virtual Machine tab. Now select the same Resource Group that was created for the Domain Controller VM, (in this case ActiveDirectory). Leave the other settings the same as the DM setup except for the "Image", change that to Windows 10 operating system and for "Size" select 2 VCPUs and 16 GIB of memory. Assign a Username and Password and check the box at the very bottom under "Licensing" to confirm eligibility. Now you must go to the "Networking" tab (next to "Disks") and select the same "Virtual Network" that was created for the Domain Controller VM. You can view the Virtual Network on the VM Overview page we visited in the previous step. **Note sometimes the Virtual Network for the Domain Controller will not appear as an option to select for the Client, usually this is because the first VM that was created is still being built. This is ok, just wait a few minutes and refresh the browser and the next attempt at creating the Client VM should have the same Domain Controller's Virtual Network as the default already selected. Once this is done, you can validate and create the Client VM. Open both VM overview pages (Azure homepage -> Virtual Machine tab -> right click open each in a new browser) to ensure both Virtual Networks match and to make the next few steps a little easier to find the IP address' we will need to login.
+Now it's time to set up the second virtual machine that will become the Client with which will connect to the Domain Controller via the network that was previously established. Go to the Azure home screen -> select the Virtual Machine tab -> select the same Resource Group that was created for the Domain Controller VM (in this case ActiveDirectory). Leave the other settings the same as the DM setup except for the "Image" -> change that to Windows 10 operating system -> go to "Size" -> select 2 VCPUs and 16 GIB of memory -> Assign a Username and Password -> check the box at the very bottom under "Licensing" to confirm eligibility. Now you must go to the "Networking" tab (next to "Disks") and select the same "Virtual Network" that was created for the Domain Controller VM. You can view the Virtual Network on the VM Overview page we visited in the previous step. (**Note sometimes the Virtual Network for the Domain Controller will not appear as an option to select for the Client, usually this is because the first VM that was created is still being built. This is ok, just wait a few minutes and refresh the browser and the next attempt at creating the Client VM should have the same Domain Controller's Virtual Network as the default already selected.) Once this is done, you can validate and create the Client VM.
 <p>
 <p>
 <img src="https://imgur.com/boRURQ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 5.</h2>
+
+**VM Overview** 
+<p>
+To make it easy to find the IP Address' we will need to check and copy in the coming steps, let's open the Virtual Machine Overview pages for each one we just created. Go to the Azure homepage -> click the Virtual Machine tab -> hold down the ctrl button on the keyboard and left click each Virtual Machine highlighted in blue. Two new browser windows will open with each VM's configuration settings. At this time ensure both Virtual Networks match (located in the upper right corner of the overview page), in this case DomainController-VM-vnet/default.
+<p>
+<p>
 <img src="https://imgur.com/jcsJAR0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/31GYCH7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -94,21 +106,33 @@ Now it's time to set up the second virtual machine that will become the Client w
 </p>
 <br />
 
-<h2>Step 5.</h2> 
+<h2>Step 6.</h2> 
 
-**Ensure Connectivity between the client and Domain Controller.** 
+**Login to the Client Virtual Machine with Remote Desktop.** 
 <p>
-Go to the start menu and type "Remote Desktop" and the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the VM overview screen -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if a authentication warning appears. After logging in, go to the start menu withing the Client VM and type "CMD" to bring up "Command Prompt" select it to open. To test the connection with the Domain Controller VM that is on the same Virtual Network, we will send a ping via the command prompt. First take note of the "Private IP Address" for the Domain Controller on the VM overview page under the Networking section, this is the address we will ping (in this case 10.0.0.4). Type in the Command Prompt "ping -t 10.0.0.4" to send a perpetual ping (connection test) to our Domain Controller VM. Notice that the request is timed out. We will fix this in the next step.
+Go to the start menu and type "Remote Desktop" and open the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the Client VM overview page (upper right corner) -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if a authentication warning appears.
 <p>
 <p> 
 <img src="https://imgur.com/qNdcnwN.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 7.</h2>
+
+**Ensure Connectivity between the Client and Domain Controller.** 
+<p>
+After logging in, a new window will appear. This new window is your Client Virtual Machine (it's own fully functional computer running Windows 10 in the Cloud). You can minimize this window anytime to return to the "Host" computer. From within that Client VM window go to the start menu and type "CMD" to bring up "Command Prompt" -> select it to open. To test the connection with the Domain Controller VM (that is on the same Virtual Network), we will send a ping via the command prompt. First take note of the "Private IP Address" for the Domain Controller on it's VM overview page (under the Networking section on the right). This is the address we will "Ping" (in this case it's 10.0.0.4). Type in the Command Prompt "ping -t 10.0.0.4" to send a perpetual "ping" (connection test) to our Domain Controller VM. Notice that the request is timed out. We will fix this in the next step.
+<p>
+<p> 
 <img src="https://imgur.com/MQXg0RI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
 <br />
 
-<h2>Step 6.</h2> 
+<h2>Step 8.</h2> 
 
 **Ensure Connectivity between the client and Domain Controller (continued).** 
 <p>
