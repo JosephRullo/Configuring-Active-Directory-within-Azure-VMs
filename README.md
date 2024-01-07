@@ -106,7 +106,21 @@ To make it easy to find the IP Address' we will need to check and copy in the co
 </p>
 <br />
 
-<h2>Step 6.</h2> 
+<h2>Step 6.</h2>
+
+**Notepad (Optional)** 
+<p>
+This step is optional, but will be very helpful for keeping track of all the Usernames and Passwords that will be created throughout this tutorial. Go to the start menu and type "Notepad" and open the app. Write down the usernames and passwords for the Domain and Client VM's that were created. You can add to this list as you create more later on.*Note for keeping track of real world passwords and sensitive login info, use a password manager client or another secure method.  
+<p>
+<p>
+<img src="https://i.imgur.com/DneaCuI.png" height="20%" width="20%" alt="Disk Sanitization Steps"/> 
+
+</p>
+<p>
+</p>
+<br />
+
+<h2>Step 7.</h2> 
 
 **Login to the Client Virtual Machine with Remote Desktop.** 
 <p>
@@ -119,7 +133,7 @@ Go to the start menu and type "Remote Desktop" and open the Remote Desktop Conne
 </p>
 <br />
 
-<h2>Step 7.</h2>
+<h2>Step 8.</h2>
 
 **Ensure Connectivity between the Client and Domain Controller.** 
 <p>
@@ -147,7 +161,7 @@ Now we will login to our Domain Controller via Remote Desktop. Use the Public IP
 </p>
 <br />
 
-<h2>Step 7.</h2>
+<h2>Step 9.</h2>
 
 **Install Active Directory.** 
 <p>
