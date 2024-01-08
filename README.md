@@ -314,11 +314,11 @@ Logon to the Client VM as the Domain Admin. From the home screen, right click on
 Finally let's create some new users in Active Directory so that we can use to test logging on the Client with them, ensuring everything is working properly. Log into the Domain Controller VM as the Admin -> open Active Directory Users and Computers -> select EMPLOYEES -> right click select New -> select User. You can create any number of users you like and assign any name/user logon/password to them, as this is only a test. Once this is complete, attempt to log into the Client VM using the Username and Password from one of the users you just created (in this example mydomain.com\alice.a). 
 <p>
 <p> 
-<img src="https://imgur.com/MzIxUtk.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/EfKgP90.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/dBo5aDL.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/kPAxDDM.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/8epTMKs.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/QNd2sdH.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/T2veW0B.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/rNdiOTy.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
