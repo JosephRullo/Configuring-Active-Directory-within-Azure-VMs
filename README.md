@@ -8,7 +8,7 @@ This tutorial outlines the implementation of  Active Directory within Azure Virt
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
