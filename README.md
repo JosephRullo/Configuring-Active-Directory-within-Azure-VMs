@@ -54,9 +54,9 @@ The computer where Active Directory will be installed is known as the Domain Con
 <p>
 <p>
 <img src="https://imgur.com/ddZi8Wm.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/CDAO9iB.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/oNnTmAZ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/09TbcTB.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5Tr1OM0.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/9kl2fML.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/T5b2S0X.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
