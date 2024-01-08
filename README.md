@@ -287,7 +287,7 @@ Log back into the Client VM (using the original username and password set for it
 <p> Switch back to the Domain Controller VM(Remote Desktop) and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client VM present in this group.
 <p>
 <p>  
-<img src="https://imgur.com/xTwYeHN.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/fQB451I.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
@@ -300,8 +300,8 @@ Log back into the Client VM (using the original username and password set for it
 Logon to the Client VM as the Domain Admin. From the home screen, right click on the start menu -> select system -> select Remote Desktop (over to the right) -> under User Accounts click "Select users that can remotely access this PC" -> Click Add -> type "domain users" in the "Enter the object names" field -> click Check Names -> select Domain Users -> click Ok -> click Ok again.
 <p>
 <p> 
-<img src="https://imgur.com/T6fGN4d.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/xiFwEXO.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QErYrob.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/tvAF0F6.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
