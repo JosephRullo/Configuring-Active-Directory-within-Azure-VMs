@@ -152,8 +152,8 @@ After logging in, a new window will appear. This new window is your Client Virtu
 Now we will login to our Domain Controller via Remote Desktop. Use the Public IP Address for the Domain Controller (found on VM overview screen) to enter in Remote Desktop and use the username and password assigned to it. Wait for Windows Server to finish loading -> go to the strart menu -> type in wf.msc to bring up the Windows Defender Firewall program and open it. In Windows Firewall -> select "Inbound Rules" -> locate the rule named "Virtual Machine Monitoring (Echo Request-ICMPv4-in) -> right click and "Enable Rule". Once this is complete, go back to the Client VM window and notice now that you are receiving a reply from 10.0.0.4 (the Domain Controller). You can stop the ping by hitting ctrl and c on the keyboard. Great! Now we know there is a definite connection between the two computers.
 <p>
 <p> 
-<img src="https://imgur.com/PjfKPz8.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/R2A27P9.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/FJMYarE.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Kzlg7c8.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/x6h5Wp8.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
