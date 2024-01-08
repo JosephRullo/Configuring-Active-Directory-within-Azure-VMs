@@ -201,7 +201,7 @@ When the install is complete, you will see a yellow triangle appear in the top r
 To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the password and login. 
 <p>
 <p> 
-<img src="https://imgur.com/5ZcDV4A.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/TDfEIQg.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
@@ -214,9 +214,9 @@ To log back in we will now use the Domain Name we just created with the Active D
 Now that we are logged back into the Domain Controller VM under the new domain name we created, we will start to create groups that we can add users to. From the Sever Manager Dasboard in the upper right corner click on "Tools" -> select "Active Directory Users and Computers" (you can also go to the start menu and search for this as well). Once opened, Under the heading on the left of the window titled "Active Directory User and Computers" select the name of the domain that was created in the previous step(in this case mydomain.com). You will notice 6 folders that already exist here, we will add 2 more in this tutorial. Right click on the domain -> select New -> choose "Organizational Unit" -> name it "ADMINS" for this example. Repeat this and create another Organizational Unit called EMPLOYEES. 
 <p>
 <p> 
-<img src="https://imgur.com/6JIbYfA.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3E4nAbD.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/2AB3h38.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/fWsv9Z2.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/LEuM3UX.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 </p>
@@ -229,7 +229,7 @@ Now that we are logged back into the Domain Controller VM under the new domain n
 Begin by opening the ADMINS organizational unit that was created in the previous step and right click -> select New -> select User. Fill in the First and Last name and assign a User Login Name -> click next -> assign a Password (uncheck "user must change password at next logon" for this example, usually this is left on) -> click Next -> click Finish (write down username and password in case you forget).
 <p>
 <p> 
-<img src="https://imgur.com/3967bDO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yLhBpqI.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/6Veye3B.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
