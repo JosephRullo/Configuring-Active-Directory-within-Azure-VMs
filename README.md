@@ -169,7 +169,7 @@ With connectivity established, we can now begin to install Active Directory on t
 <p> 
 <img src="https://imgur.com/Ee3ZbNU.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/bHrgjSx.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/WTWE1RG.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/S5J7mlI.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/mTH0zU6.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
@@ -183,8 +183,8 @@ With connectivity established, we can now begin to install Active Directory on t
 When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear -> under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
 <p>
 <p> 
-<img src="https://imgur.com/WVaHLOb.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/SRO8aPJ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/mSynPbJ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/85hwOKy.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/jIMTV0V.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/I2k5yty.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/syOapvK.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
