@@ -327,6 +327,6 @@ Finally let's create some new users in Active Directory so that we can use to te
 <p>
 </p>
 <br />
-<h2>Congratulations!!!</h2>
+<h2> <p align="center"> Congratulations!!!</h2>
 
-Active Directory is now setup and functioning properly.
+<p align="center"> Active Directory is now setup and functioning properly.
