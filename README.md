@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/QpoJl8Y.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>Active Directory Deployed in Microsoft's Cloud Platform (Azure)</h1>
+<h1> <p align="center"> Active Directory Deployed in Microsoft's Cloud Platform (Azure)</h1>
 <p align="center"> This tutorial outlines the implementation of  Active Directory within Azure Virtual Machines.<br />
 <br />
 <br />
