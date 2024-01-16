@@ -221,7 +221,8 @@ To log back in we will now use the Domain Name we just created with the Active D
 Now that we are logged back into the Domain Controller VM under the new domain name we created, we will start to create groups that we can add users to. From the Sever Manager Dasboard in the upper right corner click on "Tools" -> select "Active Directory Users and Computers" (you can also go to the start menu and search for this as well). Once opened, Under the heading on the left of the window titled "Active Directory User and Computers" select the name of the domain that was created in the previous step(in this case mydomain.com). You will notice 6 folders that already exist here, we will add 2 more in this tutorial. Right click on the domain -> select New -> choose "Organizational Unit" -> name it "ADMINS" for this example. Repeat this and create another Organizational Unit called EMPLOYEES. 
 <p>
 <p> 
-<img src="https://i.imgur.com/3E4nAbD.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uDhbXrj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Y1ul5nM.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/2AB3h38.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/LEuM3UX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 </p>
