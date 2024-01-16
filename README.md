@@ -336,15 +336,15 @@ Finally let's create some new users in Active Directory. We will test logging on
 
 **Create Users with PowerShell (Alternative Method)(Optional)** 
 <p>
-For a more robust test with User logins, password changes and network sharing, let's run a script utilizing PowerShell. PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Windows, Linux, and macOS. This script will create 5000 random Users that will be able to login to the client. This script was originally written by Josh Madakor and edited slightly for this example. Go to the start menu and type PowerShell -> right click and run as Administrator. Once open click on "New Script" at the top left -> copy and paste this script located here https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 -> click "Run Script". This will take a few minutes to complete. Once finished, you can go back to Active Directory Users and Computers -> 
+For a more robust test with User logins, password changes and network sharing, let's run a script utilizing PowerShell. PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Windows, Linux, and macOS. This script will create 5000 random Users that will be able to login to the client. This script was originally written by Josh Madakor and edited slightly for this example. Go to the start menu and type PowerShell -> right click and run as Administrator. Once open click on "New Script" at the top left -> copy and paste this script located here https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 -> click "Run Script". This will take a few minutes to complete. Once finished, you can go back to Active Directory Users and Computers -> right click on _EMPLOYESS and select "Refresh". Now you should see the 5000 new users that the script created for us. You can select any one of them and follow step 20 to log in with them as a regular User.
 <p>
 <p> 
 <img src="https://i.imgur.com/MEN9WoP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/Hh1lrDb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/vjbfBsp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/YnDmD1p.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/T2veW0B.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/rNdiOTy.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/FwWqXCb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/VSsZppc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
