@@ -176,7 +176,7 @@ With connectivity established, we can now begin to install Active Directory on t
 <p> 
 <img src="https://i.imgur.com/ylaPPZT.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/9OpDlke.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/S5J7mlI.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/HVg7Y3c.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/Hd23LXj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
