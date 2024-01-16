@@ -187,14 +187,14 @@ With connectivity established, we can now begin to install Active Directory on t
 
 **Install Active Directory (continued).** 
 <p>
-When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear -> under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
+When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear. Under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
 <p>
 <p> 
 <img src="https://i.imgur.com/mSynPbJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/85hwOKy.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/jIMTV0V.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/I2k5yty.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/syOapvK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/ZPAZ7nc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/lTKPk1m.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/dwAS3MJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/hLebJiZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
 <img src="https://imgur.com/LBvmgzt.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
