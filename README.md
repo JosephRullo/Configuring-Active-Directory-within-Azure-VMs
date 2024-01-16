@@ -174,10 +174,10 @@ Now we will login to our Domain Controller via Remote Desktop. Use the Public IP
 With connectivity established, we can now begin to install Active Directory on the Domain Controller VM. On the Sever Manager Dasboard -> select 2. Add roles and features -> click "Next" in the wizard until you get to "Sever Roles" -> check the box next to "Active Directory Domain Services" -> click next-> click "Add Features" -> click "Next" until you get to confirmation -> click "Install" and wait.
 <p>
 <p> 
-<img src="https://imgur.com/Ee3ZbNU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/bHrgjSx.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ylaPPZT.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/9OpDlke.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/S5J7mlI.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://imgur.com/mTH0zU6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Hd23LXj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
