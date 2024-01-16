@@ -116,7 +116,7 @@ To make it easy to find the IP Addresses we will need to copy in the coming step
 
 **Notepad (Optional)** 
 <p>
-This step is optional, but will be very helpful for keeping track of all the Usernames and Passwords that will be created throughout this tutorial. Go to the start menu and type "Notepad" and open the app. Write down the usernames and passwords for the Domain and Client VM's that were created. You can add to this list as you create more later on.*Note for keeping track of real world passwords and sensitive login info, use a password manager client or another secure method.  
+This step is optional, but will be very helpful for keeping track of all the Usernames and Passwords that will be created throughout this tutorial. Go to the start menu and type "Notepad" and open the app. Write down the usernames and passwords for the Domain and Client VM's that were created. You can add to this list as you create more later on. *Note for keeping track of real world passwords and sensitive login info, use a password manager client or another secure method.  
 <p>
 <p>
 <img src="https://i.imgur.com/DneaCuI.png" height="3%" width="30%" alt="Disk Sanitization Steps"/> 
