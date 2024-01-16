@@ -276,7 +276,7 @@ In order for the Client VM to regonize the Domain we set up, we have to set the 
 
 **Join the Client to your Domain(continued).** 
 <p>
-Log back into the Client VM (using the original username and password set for it) via Remote Desktop. Once logged back in -> right click on the Start menu -> select System -> click on "Rename this PC (advanced)" -> in the new window click "Change" next to change domain workgroup -> Click "Domain" under Member of -> enter the name of the Domain "created in Active Directory" in the field -> click Ok -> Enter in the Username and Password assigned to the administrator of the Domain (ex mydomain\joe_admin) -> click Ok. The computer will prompt you to Restart (note prompt windows may be behind the window you are currently on). Click to restart. Now log on to the Client VM as the admin we created for the Domain Controller (we can do this now that we have joined the Client to the Domain). Lastly we will go back to the Domain Controller VM(Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
+Log back into the Client VM (using the original username and password set for it) via Remote Desktop. Once logged back in -> right click on the Start menu -> select System -> click on "Rename this PC (advanced)" -> in the new window click "Change" next to change domain workgroup -> Click "Domain" under Member of -> enter the name of the Domain "created in Active Directory" in the field -> click Ok -> Enter in the Username and Password assigned to the Administrator of the Domain -> click Ok. The computer will prompt you to Restart (Prompt windows may be behind the window you are currently on, click and drag them aside if needed). Click to restart. Now log on to the Client VM as the Admin we created for the Domain Controller. We can do this now that we have joined the Client to the Domain.
 <p>
 <p>  
 <img src="https://i.imgur.com/O2io8A0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -291,7 +291,7 @@ Log back into the Client VM (using the original username and password set for it
 <h2>Step 18.</h2>
 
 **Verify Client is Present in Active Directory.** 
-<p> Switch back to the Domain Controller VM(Remote Desktop) and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client VM present in this group.
+<p> Switch back to the Domain Controller VM and verify Client shows up in Active Directory. Go to Active Directory Users and Computers (ADUC) -> select the Domain -> select “Computers”. You should see the Client VM present in this group.
 <p>
 <p>  
 <img src="https://i.imgur.com/fQB451I.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
