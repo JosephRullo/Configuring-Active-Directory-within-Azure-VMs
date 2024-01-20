@@ -250,7 +250,7 @@ Begin by opening the ADMINS organizational unit that was created in the previous
 
 **Create a new User/Administrator (continued).**
 <p>
-Now we will make this User the Admin. To do this go to ADMINS -> right click on the User that was just created -> select Properties -> click the "Members of" tab -> click "Add" -> type "domain" in the "Enter the object names" field -> click "Check Names" -> select "Domain Admins" -> click Ok -> click Apply -> click Ok. Now we can logoff and sign back in as this new administator. Go to command prompt -> type logoff. Go back to remote desktop connection and login to the Domain Controller again this time using the domain name \  followed by the username and password we just assigned the admin, in this example it's mydomain.com\joe_admin. We will use this admin account for the Domain Controller moving forward.
+Now we will make this User the Admin. To do this go to ADMINS -> right click on the User that was just created -> select Properties -> click the "Members of" tab -> click "Add" -> type "domain" in the "Enter the object names" field -> click "Check Names" -> select "Domain Admins" -> click Ok -> click Apply -> click Ok. Now we can logoff and sign back in as this new administator. Go to command prompt -> type logoff. Go back to Remote Desktop Connection and login to the Domain Controller again this time using the domain name \  followed by the username and password we just assigned the Admin, in this example it's mydomain.com\joe_admin. We will use this Admin account for the Domain Controller moving forward.
 <p>
 <p> 
 <img src="https://i.imgur.com/uNLgrhK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
