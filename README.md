@@ -11,7 +11,8 @@
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
+- Virtual Machines
 - Remote Desktop
 - Windows Defender Firewall
 - Active Directory Domain Services
@@ -29,8 +30,8 @@
 - Install Active Directory
 - Create an Admin and Normal User Account in AD
 - Join the Client to the Domain
-- Setup Remote Desktop for non-administrative users on Client
-- Create additional users and log into the Client with one of the users
+- Setup Remote Desktop for Non-Administrative Users on Client
+- Create Additional Users and Log into the Client with one of the Users
 
 
 
