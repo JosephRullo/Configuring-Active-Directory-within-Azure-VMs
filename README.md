@@ -189,7 +189,7 @@ With connectivity established, we can now begin to install Active Directory on t
 
 **Install Active Directory (continued).** 
 <p>
-When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear. Under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open. Under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
+When the install is complete, you will see a yellow triangle appear in the top right corner next to a flag. Click this flag and a small window will appear. Under "Post-Deployment configuration" click on "Promote this server to a domain controller" -> a new window will open. Under Deployment Configuration -> select the deployment operation "Add a new forest" -> in the "Root domain name:" field assign it a name, in this example I chose "mydomain.com" (This will now be the Domain Controller's official name). Click "next" and enter in a password (Note you will not need this specific password for this tutorial, but it's neccessary to enter one to complete the install)  -> click "next" until you get to "Additional options" and wait for the domain name to load -> click next again until you come to the "Prerequisites check" section and click "Install". The Domain Controller VM will now restart. You will lose your connection to it in the process, that's ok, we will reconnect in the next step.
 <p>
 <p> 
 <img src="https://i.imgur.com/mSynPbJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
@@ -207,7 +207,7 @@ When the install is complete, you will see a yellow triangle appear in the top r
 
 **Log back into the Domain Controller VM.** 
 <p>
-To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the password and login. 
+To log back in we will now use the Domain Name we just created with the Active Directory install. Enter the domain's name you assigned followed by a backslash and then the Username, for this example it will be mydomain.com\labuser -> now enter the Domain VM's password and login. 
 <p>
 <p> 
 <img src="https://i.imgur.com/TDfEIQg.png" height="40%" width="40%" alt="Disk Sanitization Steps"/> 
