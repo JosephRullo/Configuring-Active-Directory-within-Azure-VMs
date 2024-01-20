@@ -135,7 +135,7 @@ This step is optional, but will be very helpful for keeping track of all the Use
 Go to the start menu and type "Remote Desktop" and open the Remote Desktop Connection program. Log into the Client VM by copying the "Public IP Address" located on the Client VM overview page (upper right corner) -> enter it in the "Computer" field of Remote Desktop and click connect -> now enter the username and password that was assigned to it and click "Ok" to login -> click yes if an authentication warning appears.
 <p>
 <p> 
-<img src="https://imgur.com/qNdcnwN.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/IeWeNBe.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
