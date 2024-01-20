@@ -264,7 +264,7 @@ Now we will make this User the Admin. To do this go to ADMINS -> right click on 
 
 **Join the Client to your Domain.** 
 <p>
-In order for the Client VM to regonize the Domain we set up, we have to set the Domain Controller's DNS server as the Client's DNS server for it to work. Go to the Azure Portal -> go to the  Client VM's overview page -> click on Networking (on the left of the screen) -> click on the Network Interface: (highlighted and bolded in blue) -> click "Choose DNS server" -> select "Custom" and type in the DNS server field the "Private IP Address" of the Domain Controller VM (found on the Domain Controller's VM overview page) -> click "Save". Once saving is complete, go back to the Azure Virtual Macnine page -> select the Client VM -> click Restart at the top of the screen -> click Yes. Wait a few minutes for the Client to restart.
+In order for the Client VM to regonize the Domain we set up, we have to set the Domain Controller's DNS server as the Client's DNS server for it to work. Go to the Azure Portal -> go to the  Client VM's overview page -> click on Networking (on the left of the screen) -> click on the Network Interface: (highlighted and bolded in blue) -> click "Choose DNS server" -> select "Custom" and type in the DNS server field the "Private IP Address" of the Domain Controller VM (found on the Domain Controller's VM overview page) -> click "Save". Once saving is complete, go back to the Azure Virtual Machine page -> select the Client VM -> click Restart at the top of the screen -> click Yes. Wait a few minutes for the Client to restart.
 <p>
 <p> 
 <img src="https://i.imgur.com/zeJy8Gt.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
