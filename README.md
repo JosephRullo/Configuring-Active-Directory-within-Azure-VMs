@@ -108,8 +108,8 @@ Now it's time to set up the second virtual machine that will become the Client. 
 To make it easy to find the IP Addresses we will need to copy in the coming steps, let's open the Overview pages for the two VM's we just created. Go to the Azure homepage -> click the Virtual Machine tab -> hold down the ctrl button on the keyboard and left click each Virtual Machine highlighted in blue. Two new browser windows will open with each VM's Overview of all their configuration settings. At this time ensure both "Virtual Networks" match (located in the upper right corner of the overview page), in this case DomainController-VM-vnet/default. Also take note of the Public and Private IP Addresses for both VM's.
 <p>
 <p>
-<img src="https://i.imgur.com/WrviLWB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/dGaXFBZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/S5bQeLb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/ELJS48D.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 </p>
