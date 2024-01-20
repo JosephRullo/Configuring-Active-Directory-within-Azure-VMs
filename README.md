@@ -351,6 +351,7 @@ For a more robust test with User logins, password changes and network sharing, l
 <p>
 </p>
 <br />
-<h2> <p align="center">  To learn how to share access to folders and set various permissions in Active Directory please view this tutorial: 
-<p> <p align="center"> https://github.com/JosephRullo/Active-Directory-Security-Groups-and-Sharing-Access-Permissions/blob/main/README.md. </h2>
 <h2> <p align="center"> Active Directory Setup is now Complete!!! </h2>
+<h2> <p align="center">  For more tutorials on Active Directory as well as Network Security Groups, VPNs and Ticketing Systems please visit this link: 
+<p> <p align="center"> https://github.com/JosephRullo </h2>
+
